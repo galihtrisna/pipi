@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2F8"
+    tools:context=".MateriMtkBab1Activity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:background="#00FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_mtk_img3" />
+
+    <TextView
+        android:id="@+id/tulisan_matematika"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:gravity="center"
+        android:text="Mean, Median, dan Modus"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_rangkuman"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="@+id/tulisan_matematika"
+        app:layout_constraintTop_toBottomOf="@+id/tulisan_matematika">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_ico"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/text"
+            android:fontFamily="@font/balsamiqsans"
+            android:gravity="center"
+            android:text="Rangkuman"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_kuis_akhir"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tulisan_matematika"
+        app:layout_constraintTop_toBottomOf="@+id/tulisan_matematika">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_file_ico_m" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/text"
+            android:fontFamily="@font/balsamiqsans"
+            android:gravity="center"
+            android:text="Kuis Akhir"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="540dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="25dp"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#EEF2F8">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_materi"/>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="115dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/text"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:gravity="center"
+                    android:text="Mean"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal"/>
+
+                <Button
+                    android:layout_marginTop="155dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/button_kuis1"
+                    android:layout_width="334dp"
+                    android:layout_height="45dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/bg_login4"
+                    android:text="Kuis 1 (Mean, Median, dan Modus)"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:textSize="14sp"/>
+
+                <ImageButton
+                    android:id="@+id/play_1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_play_button_2"
+                    android:background="#00000000"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="325dp"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#EEF2F8">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_materi"/>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="115dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/text"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:gravity="center"
+                    android:text="Median"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal"/>
+
+                <Button
+                    android:layout_marginTop="155dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/button_kuis2"
+                    android:layout_width="334dp"
+                    android:layout_height="45dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/bg_login4"
+                    android:text="Kuis 2 (Mean, Median, dan Modus)"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:textSize="14sp"/>
+
+                <ImageButton
+                    android:id="@+id/play_2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_play_button_2"
+                    android:background="#00000000"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="625dp"
+                android:layout_width="375dp"
+                android:layout_marginBottom="75dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#EEF2F8">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_materi"/>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="115dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/text"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:gravity="center"
+                    android:text="Modus"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal"/>
+
+                <Button
+                    android:layout_marginTop="155dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/button_kuis3"
+                    android:layout_width="334dp"
+                    android:layout_height="45dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/bg_login4"
+                    android:text="Kuis 3 (Mean, Median, dan Modus)"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:textSize="14sp"/>
+
+                <ImageButton
+                    android:id="@+id/play_3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_play_button_2"
+                    android:background="#00000000"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2F8"
+    tools:context=".MatematikaBabActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mtk_bab_1"
+                android:layout_width="375dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_mtk_img2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Mean, Median, dan Modus"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mtk_bab_2"
+                android:layout_width="375dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="110dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_mtk_img2" />
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Luas dan Volume Limas"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mtk_bab_3"
+                android:layout_width="375dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="200dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_mtk_img2" />
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Volume dan Luas Permukaan Bola"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mtk_bab_4"
+                android:layout_width="375dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="290dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_mtk_img2" />
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Kubus dan Balok"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mtk_bab_5"
+                android:layout_width="375dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="380dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12.5dp"
+                        android:src="@drawable/ic_mtk_img2" />
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Menghitung bilangam bulat negatif"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/header_mtk_bab"
+        android:layout_width="450dp"
+        android:layout_height="275dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kotakbiru" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:background="#00FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/header_mtk_bab"
+        app:layout_constraintEnd_toEndOf="@+id/header_mtk_bab"
+        app:srcCompat="@drawable/img_mtk_1" />
+
+    <TextView
+        android:id="@+id/tulisan_matematika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="Matematika"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/header_mtk_bab"
+        app:layout_constraintTop_toTopOf="@+id/header_mtk_bab" />
+
+    <TextView
+        android:id="@+id/tulisan_kelas6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="Kelas 6"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/tulisan_matematika"
+        app:layout_constraintTop_toBottomOf="@+id/tulisan_matematika" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

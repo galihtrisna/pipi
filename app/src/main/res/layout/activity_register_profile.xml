@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    tools:context=".RegisterProfileActivity">
+
+    <EditText
+        android:id="@+id/et_nama_daftar_depan"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edittext"
+        android:contentDescription="@string/text"
+        android:ems="10"
+        android:hint="@string/nama_depan"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_login_header2"
+        tools:ignore="ContentDescription,LabelFor" />
+
+    <EditText
+        android:id="@+id/et_nama_daftar_belakang"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext"
+        android:contentDescription="@string/text"
+        android:ems="10"
+        android:hint="@string/nama_belakang"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/et_nama_daftar_depan"
+        app:layout_constraintTop_toBottomOf="@+id/bg_login_header2"
+        tools:ignore="ContentDescription,LabelFor" />
+
+    <TextView
+        android:id="@+id/halo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/pilih_kelas"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_daftarkelas"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_daftarkelas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_daftarkelas" />
+
+    <TextView
+        android:id="@+id/halo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/masukkan_nama"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_nama_daftar_depan"
+        app:layout_constraintEnd_toEndOf="@+id/et_nama_daftar_depan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_nama_daftar_depan" />
+
+    <ImageView
+        android:id="@+id/bg_login_header2"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="-180dp"
+        android:layout_marginTop="-550dp"
+        android:contentDescription="@string/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_login" />
+
+    <ImageView
+        android:id="@+id/bg_login_footer2"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_marginBottom="-325dp"
+        android:contentDescription="@string/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg_login" />
+
+    <TextView
+        android:id="@+id/masuk_akun4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/daftar_akun"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_login_header2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <TextView
+        android:id="@+id/halo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/halo_selamat_datang_di_pipi"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_login_header2"
+        app:layout_constraintEnd_toEndOf="@+id/masuk_akun4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/masuk_akun4"
+        app:layout_constraintTop_toBottomOf="@+id/masuk_akun4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btn_lanjut_daftar2"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/button"
+        android:text="@string/lanjut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_login_footer2"
+        app:srcCompat="@drawable/btn_yellow" />
+
+    <TextView
+        android:id="@+id/lanjut2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/lanjut"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_lanjut_daftar2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lanjut_daftar2"
+        app:layout_constraintStart_toStartOf="@+id/btn_lanjut_daftar2"
+        app:layout_constraintTop_toTopOf="@+id/btn_lanjut_daftar2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="35dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/text"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lanjut_daftar2"
+        app:layout_constraintTop_toBottomOf="@+id/lanjut2"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="35dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/text"
+        app:layout_constraintStart_toStartOf="@+id/btn_lanjut_daftar2"
+        app:layout_constraintTop_toBottomOf="@+id/lanjut2"
+        app:srcCompat="@drawable/line" />
+
+    <TextView
+        android:id="@+id/teks4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/daftar_dengan_akun_google"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lanjut_daftar2" />
+
+    <ImageView
+        android:id="@+id/btn_google_daftar2"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ke_masuk3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/teks4"
+        app:srcCompat="@drawable/edittext" />
+
+    <Button
+        android:id="@+id/btn_ke_masuk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="150dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/sudah_punya_akun_masuk"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lanjut_daftar2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="135dp"
+        android:contentDescription="@string/text"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_google_daftar2"
+        app:layout_constraintStart_toStartOf="@+id/btn_google_daftar2"
+        app:layout_constraintTop_toTopOf="@+id/btn_google_daftar2"
+        app:srcCompat="@drawable/ic_google" />
+
+    <TextView
+        android:id="@+id/teks5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/text"
+        android:fontFamily="@font/balsamiqsans"
+        android:text="@string/google"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_google_daftar2"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/btn_google_daftar2" />
+
+    <Spinner
+        android:id="@+id/spinner_daftarkelas"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/edittext"
+        app:layout_constraintEnd_toEndOf="@+id/et_nama_daftar_depan"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/et_nama_daftar_depan"
+        app:layout_constraintTop_toBottomOf="@+id/et_nama_daftar_depan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

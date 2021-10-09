@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">pipi</string>
+    <string name="background">background</string>
+    <string name="button">button</string>
+    <string name="text">text</string>
+    <string name="masuk_akun">Masuk Akun</string>
+    <string name="halo">Halo, selamat datang kembali di pipi</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="massukkan_password">Masukkan Password</string>
+    <string name="lupa_kata_sandi">Lupa kata sandi?</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="masuk_dengan_akun_google">Masuk dengan akun Google</string>
+    <string name="tidak_punya_akun_daftar">Tidak punya akun? Daftar</string>
+    <string name="halo_selamat_datang_di_pipi">Halo, selamat datang di Pipi</string>
+    <string name="daftar_akun">Daftar Akun</string>
+    <string name="masukkan_nama">Masukkan nama</string>
+    <string name="nama_depan">depan</string>
+    <string name="nama_belakang">belakang</string>
+    <string name="daftar_dengan_akun_google">Daftar dengan akun Google</string>
+    <string name="sudah_punya_akun_masuk">Sudah punya akun? Masuk</string>
+    <string name="google">Google</string>
+    <string name="logout">Logout</string>
+    <string name="kelas">kelas</string>
+    <string name="pilih_kelas">Pilih Kelas</string>
+    <string-array name="daftar_kelas">
+        <item>kelas 1</item>
+        <item>kelas 2</item>
+        <item>kelas 3</item>
+        <item>kelas 4</item>
+        <item>kelas 5</item>
+        <item>kelas 6</item>
+        <item>kelas 7</item>
+        <item>kelas 8</item>
+        <item>kelas 9</item>
+        <item>kelas 10 IPA</item>
+        <item>kelas 11 IPA</item>
+        <item>kelas 12 IPA</item>
+        <item>kelas 10 IPS</item>
+        <item>kelas 11 IPS</item>
+        <item>kelas 12 IPS</item>
+
+    </string-array>
+    <string name="memulihkan_akun">Memulihkan Akun</string>
+    <string name="keterangan_lupa">Kami akan mengirimkan tautan kepada anda dengan Email. Kemudian buka tautan tersebut dan buatlah password yang baru</string>
+    <string name="haiteman">Hai, Teman!</string>
+    <string name="pilih_kelas_kamu">Pilih kelas kamu sebelum mulai belajar</string>
+    <string name="bab">bab</string>
+
+</resources>
