@@ -33,10 +33,10 @@ class PilihKelasActivity : AppCompatActivity() {
 
         //fungsi button kelas
         kelas6.setOnClickListener {
-            Intent(this@PilihKelasActivity, HomeActivity::class.java).also {
+            Intent(this@PilihKelasActivity, HomeActivity::class.java).also {intent ->
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-                startActivity(it)
+                startActivity(intent)
             }
         }
         kelas1.setOnClickListener {
