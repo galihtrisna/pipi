@@ -253,6 +253,7 @@
         android:layout_width="364dp"
         android:layout_height="50dp"
         android:backgroundTint="#00FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
         android:contentDescription="@string/text"
         app:layout_constraintBottom_toTopOf="@+id/btn_ke_daftar"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
