@@ -236,6 +236,7 @@
         android:layout_height="50dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/text"
+        android:foreground="?android:attr/selectableItemBackground"
         app:layout_constraintBottom_toTopOf="@+id/btn_ke_masuk"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView"
