@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.stematel.pipi">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,24 +13,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pipi">
-        <activity android:name=".MateriMtkBab1Activity"></activity>
+        android:theme="@style/Theme.Pipi"
+        tools:ignore="AllowBackup">
+        <activity android:name=".MateriMtkBab1Activity" android:screenOrientation="nosensor"/>
         <activity android:name=".VideoMtk1Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" android:screenOrientation="landscape"/>
-        <activity android:name=".MatematikaBabActivity" />
-        <activity android:name=".MatematikaBabCoActivity" />
-        <activity android:name=".PilihKelasActivity" />
-        <activity android:name=".intro">
+        <activity android:name=".MatematikaBabActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".MatematikaBabCoActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".PilihKelasActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".intro" android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RegisterProfileActivity" />
-        <activity android:name=".LupaPasswordActivity" />
+        <activity android:name=".LoginActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".RegisterActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".HomeActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".RegisterProfileActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".LupaPasswordActivity" android:screenOrientation="nosensor"/>
     </application>
 
 </manifest>
