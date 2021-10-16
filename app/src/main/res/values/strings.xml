@@ -46,5 +46,9 @@
     <string name="pilih_kelas_kamu">Pilih kelas kamu sebelum mulai belajar</string>
     <string name="bab">bab</string>
     <string name="webclient_id">366698225060-ebg9r4sh9vge400fhprpbrn8b000ub44.apps.googleusercontent.com</string>
+    <string name="bahasa_indonesia">Bahasa Indonesia</string>
+    <string name="bahasa_inggris">Bahasa Inggris</string>
+    <string name="ipa">IPA</string>
+    <string name="ips">IPS</string>
 
 </resources>

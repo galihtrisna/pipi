@@ -17,7 +17,7 @@
         tools:ignore="AllowBackup">
         <activity android:name=".MateriMtkBab1Activity" android:screenOrientation="nosensor"/>
         <activity android:name=".VideoMtk1Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" android:screenOrientation="landscape"/>
-        <activity android:name=".MatematikaBabActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".MatematikaActivity" android:screenOrientation="nosensor"/>
         <activity android:name=".MatematikaBabCoActivity" android:screenOrientation="nosensor"/>
         <activity android:name=".PilihKelasActivity" android:screenOrientation="nosensor"/>
         <activity android:name=".intro" android:screenOrientation="nosensor">

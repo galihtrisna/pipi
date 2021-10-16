@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF2F8"
-    tools:context=".MatematikaBabActivity">
+    tools:context=".MatematikaActivity">
 
     <ScrollView
         android:layout_width="match_parent"

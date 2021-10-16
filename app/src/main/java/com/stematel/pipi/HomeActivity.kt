@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent) }}
         button2.setOnClickListener {
-            Intent(this@HomeActivity,MatematikaBabActivity::class.java).also { intent ->
+            Intent(this@HomeActivity,MatematikaActivity::class.java).also { intent ->
                 startActivity(intent) }
         }
 

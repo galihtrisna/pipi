@@ -35,7 +35,7 @@ class MateriMtkBab1Activity : AppCompatActivity() {
                 startActivity(it)}
         }
         back.setOnClickListener {
-            Intent(this@MateriMtkBab1Activity,MatematikaBabActivity::class.java).also {
+            Intent(this@MateriMtkBab1Activity,MatematikaActivity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it)}
         }

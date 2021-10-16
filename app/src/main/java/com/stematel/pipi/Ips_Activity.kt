@@ -7,10 +7,10 @@ import android.view.WindowManager
 import android.widget.ImageButton
 import androidx.cardview.widget.CardView
 
-class MatematikaBabActivity : AppCompatActivity() {
+class Ips_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_matematika_bab)
+        setContentView(R.layout.activity_ips_bab)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
@@ -19,13 +19,13 @@ class MatematikaBabActivity : AppCompatActivity() {
         val back = findViewById<ImageButton>(R.id.back)
 
         back.setOnClickListener {
-            Intent(this@MatematikaBabActivity,HomeActivity::class.java).also {
+            Intent(this@Ips_Activity,HomeActivity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it)}
         }
 
         bab_1_mtk.setOnClickListener {
-            Intent(this@MatematikaBabActivity,MateriMtkBab1Activity::class.java).also {
+            Intent(this@Ips_Activity,MateriMtkBab1Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it) }
         }
