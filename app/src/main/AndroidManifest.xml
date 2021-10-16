@@ -32,6 +32,10 @@
         <activity android:name=".HomeActivity" android:screenOrientation="nosensor"/>
         <activity android:name=".RegisterProfileActivity" android:screenOrientation="nosensor"/>
         <activity android:name=".LupaPasswordActivity" android:screenOrientation="nosensor"/>
+        <activity android:name=".Bing_Activity" android:screenOrientation="nosensor"/>
+        <activity android:name=".Indo_Activity" android:screenOrientation="nosensor"/>
+        <activity android:name=".Ipa_Activity" android:screenOrientation="nosensor"/>
+        <activity android:name=".Ips_Activity" android:screenOrientation="nosensor"/>
     </application>
 
 </manifest>
