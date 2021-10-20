@@ -18,7 +18,6 @@
         tools:ignore="AllowBackup">
         <activity android:name=".GudangActivity"></activity>
         <activity android:name=".BelanjaActivity" />
-        <activity android:name=".MainActivity" />
         <activity
             android:name=".MateriMtkBab1Activity"
             android:screenOrientation="nosensor" />

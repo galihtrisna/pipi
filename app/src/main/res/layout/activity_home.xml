@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF2F8">
+
+
 
     <Button
         android:id="@+id/btn_logout"
@@ -20,28 +22,390 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/header_home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/balsamiqsans"
+        android:foregroundGravity="center"
+        android:text="Hi"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/balsamiqsans"
+        android:foregroundGravity="center"
+        android:text="Teman"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#33000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/balsamiqsans"
+        android:foregroundGravity="center"
+        android:text="Ayo kita mulai belajar"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="370dp"
         android:layout_height="277dp"
-        android:layout_marginTop="-100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
         app:srcCompat="@drawable/white_retangle" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/balsamiqsans"
+        android:foregroundGravity="center"
+        android:text="Mata Pelajaran"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="550dp"
+        android:fontFamily="@font/balsamiqsans"
+        android:foregroundGravity="center"
+        android:text="Video Rekomendasi"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonhome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/btn_logout"
         app:layout_constraintEnd_toEndOf="@+id/btn_logout" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemBackground="@color/bg_login2"
+        app:menu="@menu/menu_nav"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="600dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rekomen1"
+                android:layout_width="154dp"
+                android:layout_height="137dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gambar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="Ekspor"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="113dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="IPS"
+                    android:textColor="#CCCCCC"
+                    android:textSize="10sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rekomen2"
+                android:layout_width="154dp"
+                android:layout_height="137dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gambar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="Magnet"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="113dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="IPA"
+                    android:textColor="#CCCCCC"
+                    android:textSize="10sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rekomen3"
+                android:layout_width="154dp"
+                android:layout_height="137dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gambar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="Puisi"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="113dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="Bahasa Indonesia"
+                    android:textColor="#CCCCCC"
+                    android:textSize="10sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        app:columnCount="4">
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/matematika"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#00FFFFFF">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_mtk_img3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/balsamiqsans"
+                android:foregroundGravity="center"
+                android:text="Matematika"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/IPA"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#00FFFFFF">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_atom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/balsamiqsans"
+                android:foregroundGravity="center"
+                android:text="IPA"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/IPS"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#00FFFFFF">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/balsamiqsans"
+                android:foregroundGravity="center"
+                android:text="IPS"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Bindo"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#00FFFFFF">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_indonesia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/balsamiqsans"
+                android:foregroundGravity="center"
+                android:text="Bahasa Indonesia"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Bing"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#00FFFFFF">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_united" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/balsamiqsans"
+                android:foregroundGravity="center"
+                android:text="Bahasa Inggris"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</RelativeLayout>

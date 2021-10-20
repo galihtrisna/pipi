@@ -266,7 +266,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (auth.currentUser !=null){
-            Intent(this@LoginActivity,MainActivity::class.java).also { intent ->
+            Intent(this@LoginActivity,HomeActivity::class.java).also { intent ->
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(intent)
