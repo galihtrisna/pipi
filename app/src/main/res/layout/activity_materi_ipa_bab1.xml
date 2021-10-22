@@ -34,7 +34,6 @@
         android:id="@+id/tulisan_matematika"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:backgroundTint="#00FFFFFF"
 
         android:fontFamily="@font/balsamiqsans"
@@ -43,6 +42,7 @@
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button_rangkuman"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
@@ -52,18 +52,19 @@
         android:id="@+id/button_rangkuman"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="-110dp"
+        android:layout_marginTop="126dp"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="20dp"
-        app:layout_constraintStart_toStartOf="@+id/tulisan_matematika"
-        app:layout_constraintTop_toBottomOf="@+id/tulisan_matematika">
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/ic_file_ico" />
+            android:src="@drawable/ic_file_ico" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,6 +72,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="50dp"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/text"
             android:fontFamily="@font/balsamiqsans"
             android:gravity="center"
             android:text="Rangkuman"
@@ -82,18 +84,19 @@
         android:id="@+id/button_kuis_akhir"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="-110dp"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/tulisan_matematika"
-        app:layout_constraintTop_toBottomOf="@+id/tulisan_matematika">
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/ic_file_ico_m" />
+            android:src="@drawable/ic_file_ico_m" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,6 +104,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="50dp"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/text"
             android:fontFamily="@font/balsamiqsans"
             android:gravity="center"
             android:text="Kuis Akhir"
@@ -110,10 +114,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="445dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="415dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kuis_akhir">
 
         <RelativeLayout
             android:layout_width="wrap_content"
