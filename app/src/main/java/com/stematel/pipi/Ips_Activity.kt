@@ -32,4 +32,10 @@ class Ips_Activity : AppCompatActivity() {
         }
 
     }
+    override fun onBackPressed() {
+        Intent(this@Ips_Activity,HomeActivity::class.java).also { intent ->
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(intent)}
+    }
 }

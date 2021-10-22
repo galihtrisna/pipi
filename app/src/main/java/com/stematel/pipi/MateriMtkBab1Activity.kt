@@ -37,7 +37,8 @@ class MateriMtkBab1Activity : AppCompatActivity() {
         back.setOnClickListener {
             Intent(this@MateriMtkBab1Activity,MatematikaActivity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-                startActivity(it)}
+                startActivity(it)
+            finish()}
         }
         rangkuman.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
@@ -88,5 +89,11 @@ class MateriMtkBab1Activity : AppCompatActivity() {
                 }
             }
         }
+    }
+    override fun onBackPressed() {
+        Intent(this@MateriMtkBab1Activity,MatematikaActivity::class.java).also { intent ->
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(intent) }
     }
 }

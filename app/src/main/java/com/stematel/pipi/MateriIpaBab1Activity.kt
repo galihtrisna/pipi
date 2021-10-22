@@ -89,4 +89,9 @@ class MateriIpaBab1Activity : AppCompatActivity() {
             }
         }
     }
+    override fun onBackPressed() {
+        Intent(this@MateriIpaBab1Activity,Ipa_Activity::class.java).also {
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(it)}
+    }
 }

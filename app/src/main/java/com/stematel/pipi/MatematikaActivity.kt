@@ -1,11 +1,13 @@
 package com.stematel.pipi
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.ImageButton
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+
 
 class MatematikaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +24,7 @@ class MatematikaActivity : AppCompatActivity() {
             Intent(this@MatematikaActivity,HomeActivity::class.java).also { intent ->
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-                startActivity(intent)}
+                startActivity(intent) }
         }
 
         bab_1_mtk.setOnClickListener {
@@ -31,5 +33,11 @@ class MatematikaActivity : AppCompatActivity() {
                 startActivity(it) }
         }
 
+    }
+    override fun onBackPressed() {
+        Intent(this@MatematikaActivity,HomeActivity::class.java).also { intent ->
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(intent) }
     }
 }

@@ -89,4 +89,9 @@ class MateriBingBab1Activity : AppCompatActivity() {
             }
         }
     }
+    override fun onBackPressed() {
+        Intent(this@MateriBingBab1Activity,VideoBing1Activity::class.java).also {
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(it)}
+    }
 }

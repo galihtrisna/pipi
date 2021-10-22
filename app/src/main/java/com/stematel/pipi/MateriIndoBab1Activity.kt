@@ -89,4 +89,9 @@ class MateriIndoBab1Activity : AppCompatActivity() {
             }
         }
     }
+    override fun onBackPressed() {
+        Intent(this@MateriIndoBab1Activity,Indo_Activity::class.java).also {
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(it)}
+    }
 }
