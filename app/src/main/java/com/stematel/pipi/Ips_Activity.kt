@@ -19,9 +19,10 @@ class Ips_Activity : AppCompatActivity() {
         val back = findViewById<ImageButton>(R.id.back)
 
         back.setOnClickListener {
-            Intent(this@Ips_Activity,HomeActivity::class.java).also {
+            Intent(this@Ips_Activity,HomeActivity::class.java).also { intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-                startActivity(it)}
+                startActivity(intent)}
         }
 
         bab_1_mtk.setOnClickListener {
