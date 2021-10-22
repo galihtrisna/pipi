@@ -23,6 +23,7 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
+        android:layout_marginTop="-10dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -73,5 +74,404 @@
         android:text="Ayo kita mulai belajar"
         android:textColor="@color/white"
         android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-125dp"
+        android:layout_marginBottom="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="UTS Ganjil Matematika 1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="AAA-001"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="40 Soal"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Sedang"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis"
+                    android:layout_marginTop="110dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                    android:id="@+id/detail1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/btn_yellow"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:backgroundTintMode="add"
+                    android:capitalize="none"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:hapticFeedbackEnabled="false"
+                    android:stateListAnimator="@null"
+                    android:text="Lihat detail"
+                    android:textAllCaps="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="UTS Ganjil IPA 1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="AAA-002"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="40 Soal"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Sulit"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis"
+                    android:layout_marginTop="110dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                    android:id="@+id/detail2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/btn_yellow"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:backgroundTintMode="add"
+                    android:capitalize="none"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:hapticFeedbackEnabled="false"
+                    android:stateListAnimator="@null"
+                    android:text="Lihat detail"
+                    android:textAllCaps="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="UTS Ganjil Matematika 2"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="AAA-004"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="40 Soal"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Mudah"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis"
+                    android:layout_marginTop="110dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                    android:id="@+id/detail3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/btn_yellow"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:backgroundTintMode="add"
+                    android:capitalize="none"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:hapticFeedbackEnabled="false"
+                    android:stateListAnimator="@null"
+                    android:text="Lihat detail"
+                    android:textAllCaps="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="PTS Ganjil B Indonesia 1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:text="AAA-004"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="50 Soal"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#EEF2F8"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/balsamiqsans"
+                        android:text="Sedang"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/garis"
+                    android:layout_marginTop="110dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                    android:id="@+id/detail4"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/btn_yellow"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:backgroundTintMode="add"
+                    android:capitalize="none"
+                    android:fontFamily="@font/balsamiqsans"
+                    android:hapticFeedbackEnabled="false"
+                    android:stateListAnimator="@null"
+                    android:text="Lihat detail"
+                    android:textAllCaps="false" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
