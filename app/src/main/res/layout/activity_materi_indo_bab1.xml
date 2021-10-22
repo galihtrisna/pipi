@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF2F8"
-    tools:context=".MateriMtkBab1Activity">
+    tools:context=".MateriIndoBab1Activity">
 
     <ImageButton
         android:id="@+id/back"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_mtk_img3" />
+        app:srcCompat="@drawable/ic_indonesia" />
 
     <TextView
         android:id="@+id/tulisan_matematika"
@@ -38,7 +38,7 @@
         android:contentDescription="@string/text"
         android:fontFamily="@font/balsamiqsans"
         android:gravity="center"
-        android:text="Mean, Median, dan Modus"
+        android:text="Puisi dan Prosa"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="normal"
@@ -152,7 +152,7 @@
                     android:contentDescription="@string/text"
                     android:fontFamily="@font/balsamiqsans"
                     android:gravity="center"
-                    android:text="Mean"
+                    android:text="Puisi"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="normal"/>
@@ -165,7 +165,7 @@
                     android:layout_height="45dp"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/bg_login4"
-                    android:text="Kuis 1 (Mean, Median, dan Modus)"
+                    android:text="Kuis 1 (Puisi dan Prosa)"
                     android:textAllCaps="false"
                     android:fontFamily="@font/balsamiqsans"
                     android:textSize="14sp"/>
@@ -201,7 +201,7 @@
                     android:contentDescription="@string/text"
                     android:fontFamily="@font/balsamiqsans"
                     android:gravity="center"
-                    android:text="Median"
+                    android:text="Prosa"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="normal"/>
@@ -214,7 +214,7 @@
                     android:layout_height="45dp"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/bg_login4"
-                    android:text="Kuis 2 (Mean, Median, dan Modus)"
+                    android:text="Kuis 2 (Puisi dan Prosa)"
                     android:textAllCaps="false"
                     android:fontFamily="@font/balsamiqsans"
                     android:textSize="14sp"/>
@@ -251,7 +251,7 @@
                     android:contentDescription="@string/text"
                     android:fontFamily="@font/balsamiqsans"
                     android:gravity="center"
-                    android:text="Modus"
+                    android:text="Perbedaan Puisi dan Prosa"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="normal"/>
@@ -264,7 +264,7 @@
                     android:layout_height="45dp"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/bg_login4"
-                    android:text="Kuis 3 (Mean, Median, dan Modus)"
+                    android:text="Kuis 3 (Puisi dan Prosa)"
                     android:textAllCaps="false"
                     android:fontFamily="@font/balsamiqsans"
                     android:textSize="14sp"/>

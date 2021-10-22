@@ -25,7 +25,7 @@ class Ipa_Activity : AppCompatActivity() {
         }
 
         bab_1_mtk.setOnClickListener {
-            Intent(this@Ipa_Activity,MateriMtkBab1Activity::class.java).also {
+            Intent(this@Ipa_Activity,MateriIpaBab1Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it) }
         }

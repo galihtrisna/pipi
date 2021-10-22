@@ -25,7 +25,7 @@ class Ips_Activity : AppCompatActivity() {
         }
 
         bab_1_mtk.setOnClickListener {
-            Intent(this@Ips_Activity,MateriMtkBab1Activity::class.java).also {
+            Intent(this@Ips_Activity,MateriIpsBab1Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it) }
         }

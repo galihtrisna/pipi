@@ -25,7 +25,7 @@ class Bing_Activity : AppCompatActivity() {
         }
 
         bab_1_mtk.setOnClickListener {
-            Intent(this@Bing_Activity,MateriMtkBab1Activity::class.java).also {
+            Intent(this@Bing_Activity,MateriBingBab1Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it) }
         }

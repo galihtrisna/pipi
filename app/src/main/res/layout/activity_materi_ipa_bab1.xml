@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF2F8"
-    tools:context=".MateriMtkBab1Activity">
+    tools:context=".MateriIpaBab1Activity">
 
     <ImageButton
         android:id="@+id/back"
@@ -24,10 +24,11 @@
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_mtk_img3" />
+        app:srcCompat="@drawable/ic_atom" />
 
     <TextView
         android:id="@+id/tulisan_matematika"
@@ -35,10 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/text"
+
         android:fontFamily="@font/balsamiqsans"
         android:gravity="center"
-        android:text="Mean, Median, dan Modus"
+        android:text="Sifat Magnet"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="normal"
@@ -51,38 +52,37 @@
         android:id="@+id/button_rangkuman"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
-        app:cardCornerRadius="20dp"
+        android:layout_marginTop="12dp"
         android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
         app:layout_constraintStart_toStartOf="@+id/tulisan_matematika"
         app:layout_constraintTop_toBottomOf="@+id/tulisan_matematika">
 
         <ImageView
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_file_ico"/>
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_file_ico" />
 
         <TextView
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="@string/text"
             android:fontFamily="@font/balsamiqsans"
             android:gravity="center"
             android:text="Rangkuman"
             android:textColor="@color/black"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/button_kuis_akhir"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="@+id/tulisan_matematika"
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/ic_file_ico_m" />
+            app:srcCompat="@drawable/ic_file_ico_m" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,7 +101,6 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="50dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="@string/text"
             android:fontFamily="@font/balsamiqsans"
             android:gravity="center"
             android:text="Kuis Akhir"
@@ -149,10 +148,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="115dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="@string/text"
                     android:fontFamily="@font/balsamiqsans"
                     android:gravity="center"
-                    android:text="Mean"
+                    android:text="Magnet"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="normal"/>
@@ -165,7 +163,7 @@
                     android:layout_height="45dp"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/bg_login4"
-                    android:text="Kuis 1 (Mean, Median, dan Modus)"
+                    android:text="Kuis 1 (Sifat Magnet)"
                     android:textAllCaps="false"
                     android:fontFamily="@font/balsamiqsans"
                     android:textSize="14sp"/>
@@ -176,7 +174,7 @@
                     android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_play_button_2"
+                    app:srcCompat="@drawable/ic_play_button_2"
                     android:background="#00000000"
                     android:foreground="?android:attr/selectableItemBackground"/>
 
@@ -198,10 +196,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="115dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="@string/text"
                     android:fontFamily="@font/balsamiqsans"
                     android:gravity="center"
-                    android:text="Median"
+                    android:text="Macam-Macam Magnet"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="normal"/>
@@ -214,7 +211,7 @@
                     android:layout_height="45dp"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/bg_login4"
-                    android:text="Kuis 2 (Mean, Median, dan Modus)"
+                    android:text="Kuis 2 (Sifat Magnet)"
                     android:textAllCaps="false"
                     android:fontFamily="@font/balsamiqsans"
                     android:textSize="14sp"/>
@@ -225,7 +222,7 @@
                     android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_play_button_2"
+                    app:srcCompat="@drawable/ic_play_button_2"
                     android:background="#00000000"
                     android:foreground="?android:attr/selectableItemBackground"/>
 
@@ -248,10 +245,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="115dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="@string/text"
                     android:fontFamily="@font/balsamiqsans"
                     android:gravity="center"
-                    android:text="Modus"
+                    android:text="4 Sifat Magnet"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="normal"/>
@@ -264,7 +260,7 @@
                     android:layout_height="45dp"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/bg_login4"
-                    android:text="Kuis 3 (Mean, Median, dan Modus)"
+                    android:text="Kuis 3 (Sifat Magnet)"
                     android:textAllCaps="false"
                     android:fontFamily="@font/balsamiqsans"
                     android:textSize="14sp"/>
@@ -275,7 +271,7 @@
                     android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_play_button_2"
+                    app:srcCompat="@drawable/ic_play_button_2"
                     android:background="#00000000"
                     android:foreground="?android:attr/selectableItemBackground"/>
 

@@ -15,13 +15,13 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 
-class MateriMtkBab1Activity : AppCompatActivity() {
+class MateriIpsBab1Activity : AppCompatActivity() {
 
     private val STORAGE_PERMISSION_CODE: Int = 1000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_materi_mtk_bab1)
+        setContentView(R.layout.activity_materi_ips_bab1)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
@@ -30,12 +30,12 @@ class MateriMtkBab1Activity : AppCompatActivity() {
         val rangkuman = findViewById<CardView>(R.id.button_rangkuman)
 
         play1.setOnClickListener {
-            Intent(this@MateriMtkBab1Activity,VideoMtk1Activity::class.java).also {
+            Intent(this@MateriIpsBab1Activity,VideoIps1Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it)}
         }
         back.setOnClickListener {
-            Intent(this@MateriMtkBab1Activity,MatematikaActivity::class.java).also {
+            Intent(this@MateriIpsBab1Activity,Ips_Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it)}
         }
@@ -57,10 +57,10 @@ class MateriMtkBab1Activity : AppCompatActivity() {
         }
     }
     private fun startDownloading() {
-        val url = "https://firebasestorage.googleapis.com/v0/b/pipi-2021.appspot.com/o/kelas6%2Fmatematika%2Fpengertian-mean-median.png?alt=media&token=7df0b285-5551-466a-92fa-e4dbd9a6d99b"
+        val url = "https://firebasestorage.googleapis.com/v0/b/pipi-2021.appspot.com/o/kelas6%2FIPS%2FEkspor%20dan%20Impor.jpg?alt=media&token=5561a0b7-67b2-49fe-813d-14a5df60fdfa"
         val request = DownloadManager.Request(Uri.parse(url))
         request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI or DownloadManager.Request.NETWORK_MOBILE)
-        request.setTitle("Rangkuman Matematika Bab 1.png")
+        request.setTitle("Rangkuman IPS Bab 1.jpg")
         request.setDescription("File sedang diunduh...")
 
         request.allowScanningByMediaScanner()

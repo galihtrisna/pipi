@@ -51,6 +51,20 @@ class HomeActivity : AppCompatActivity() {
                 startActivity(intent) }
         }
 
+
+        rekomen1.setOnClickListener {
+            Intent(this@HomeActivity,VideoIps1Activity::class.java).also { intent ->
+                startActivity(intent) }
+        }
+        rekomen2.setOnClickListener {
+            Intent(this@HomeActivity,VideoIpa1Activity::class.java).also { intent ->
+                startActivity(intent) }
+        }
+        rekomen3.setOnClickListener {
+            Intent(this@HomeActivity,VideoBindo1Activity::class.java).also { intent ->
+                startActivity(intent) }
+        }
+
         val buttonNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         buttonNavigationView.selectedItemId = R.id.menu_home
