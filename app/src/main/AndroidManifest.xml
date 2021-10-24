@@ -16,29 +16,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pipi"
         tools:ignore="AllowBackup">
+        <activity android:name=".ProfileActivity"></activity>
         <activity
             android:name=".VideoIps1Activity"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".VideoIpa1Activity"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".VideoBing1Activity"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".VideoBindo1Activity"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
-
-        <activity android:name=".MateriIpsBab1Activity" android:screenOrientation="nosensor"/>
-        <activity android:name=".MateriIpaBab1Activity" android:screenOrientation="nosensor"/>
-        <activity android:name=".MateriBingBab1Activity" android:screenOrientation="nosensor"/>
-        <activity android:name=".MateriIndoBab1Activity" android:screenOrientation="nosensor"/>
-        <activity android:name=".GudangActivity" android:screenOrientation="nosensor"/>
-        <activity android:name=".BelanjaActivity" android:screenOrientation="nosensor"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".MateriIpsBab1Activity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MateriIpaBab1Activity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MateriBingBab1Activity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MateriIndoBab1Activity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".GudangActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".BelanjaActivity"
+            android:screenOrientation="nosensor" />
         <activity
             android:name=".MateriMtkBab1Activity"
             android:screenOrientation="nosensor" />

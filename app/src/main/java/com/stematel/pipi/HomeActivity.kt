@@ -3,9 +3,11 @@ package com.stematel.pipi
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
+import com.bumptech.glide.Glide
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -31,6 +33,13 @@ class HomeActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
 
         username.text = currentUser?.displayName
+        val gambar = findViewById<ImageView>(R.id.gambar_profile)
+        Glide.with(this).load(currentUser?.photoUrl).into(gambar)
+
+        gambar.setOnClickListener {
+            Intent(this@HomeActivity,ProfileActivity::class.java).also { intent ->
+                startActivity(intent) }
+        }
 
         btn_logout.setOnClickListener{
             auth.signOut()
@@ -84,6 +93,7 @@ class HomeActivity : AppCompatActivity() {
                             applicationContext, GudangActivity::class.java
                         )
                     )
+                    finish()
                     overridePendingTransition(0, 0)
                     return@OnNavigationItemSelectedListener true
                 }
@@ -93,6 +103,7 @@ class HomeActivity : AppCompatActivity() {
                             applicationContext, BelanjaActivity::class.java
                         )
                     )
+                    finish()
                     overridePendingTransition(0, 0)
                     return@OnNavigationItemSelectedListener true
                 }

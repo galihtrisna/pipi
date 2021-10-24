@@ -54,13 +54,18 @@
         android:textSize="28sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_baseline_settings_24"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="70dp"
-        android:backgroundTint="#33000000"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gambar_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_alignTop="@+id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="35dp"
+        android:layout_toEndOf="@+id/username"
+        android:src="@drawable/ic_baseline_account_circle_24" />
 
     <TextView
         android:layout_width="wrap_content"

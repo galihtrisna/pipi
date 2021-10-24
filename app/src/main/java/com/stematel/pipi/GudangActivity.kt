@@ -3,15 +3,16 @@ package com.stematel.pipi
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import com.bumptech.glide.Glide
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_home.*
 
 
 class GudangActivity : AppCompatActivity() {
@@ -29,6 +30,13 @@ class GudangActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         val username = findViewById<TextView>(R.id.username)
         username.text = currentUser?.displayName
+        val gambar = findViewById<ImageView>(R.id.gambar_profile)
+        Glide.with(this).load(currentUser?.photoUrl).into(gambar)
+
+        gambar.setOnClickListener {
+            Intent(this@GudangActivity,ProfileActivity::class.java).also { intent ->
+                startActivity(intent) }
+        }
 
         hideSystemUI()
 
@@ -45,6 +53,7 @@ class GudangActivity : AppCompatActivity() {
                             applicationContext, BelanjaActivity::class.java
                         )
                     )
+                    finish()
                     overridePendingTransition(0, 0)
                     return@OnNavigationItemSelectedListener true
                 }
@@ -54,6 +63,7 @@ class GudangActivity : AppCompatActivity() {
                             applicationContext, HomeActivity::class.java
                         )
                     )
+                    finish()
                     overridePendingTransition(0, 0)
                     return@OnNavigationItemSelectedListener true
                 }
