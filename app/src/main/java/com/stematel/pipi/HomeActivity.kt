@@ -28,6 +28,10 @@ class HomeActivity : AppCompatActivity() {
 
         hideSystemUI()
 
+        val currentUser = auth.currentUser
+
+        username.text = currentUser?.displayName
+
         btn_logout.setOnClickListener{
             auth.signOut()
             Intent(this@HomeActivity,LoginActivity::class.java).also { intent ->

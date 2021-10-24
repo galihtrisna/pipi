@@ -3,16 +3,20 @@ package com.stematel.pipi
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_home.*
 
 
 class GudangActivity : AppCompatActivity() {
 
+    private lateinit var auth: FirebaseAuth
     private var pressedTime: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +24,11 @@ class GudangActivity : AppCompatActivity() {
         setContentView(R.layout.activity_gudang)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+
+        auth = FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser
+        val username = findViewById<TextView>(R.id.username)
+        username.text = currentUser?.displayName
 
         hideSystemUI()
 
@@ -56,7 +65,7 @@ class GudangActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         WindowInsetsControllerCompat(window,
             window.decorView.findViewById(android.R.id.content)).let { controller ->
-            controller.hide(WindowInsetsCompat.Type.systemBars())
+            controller.hide(WindowInsetsCompat.Type.navigationBars())
 
             // When the screen is swiped up at the bottom
             // of the application, the navigationBar shall
