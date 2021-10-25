@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pipi"
         tools:ignore="AllowBackup">
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".DetailSoalActivity"></activity>
+        <activity android:name=".ProfileActivity" />
         <activity
             android:name=".VideoIps1Activity"
             android:screenOrientation="landscape"
