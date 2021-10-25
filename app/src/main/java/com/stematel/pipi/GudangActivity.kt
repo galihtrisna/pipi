@@ -76,6 +76,8 @@ class GudangActivity : AppCompatActivity() {
         detail1.setOnClickListener {
             Intent(this@GudangActivity,DetailSoalActivity::class.java).also { intent ->
                 startActivity(intent) }
+            overridePendingTransition(0, 0)
+            finish()
         }
     }
     private fun hideSystemUI() {
