@@ -28,6 +28,7 @@ class MateriIpaBab1Activity : AppCompatActivity() {
         val play1 = findViewById<ImageButton>(R.id.play_1)
         val back = findViewById<ImageButton>(R.id.back)
         val rangkuman = findViewById<CardView>(R.id.button_rangkuman)
+        val kuis = findViewById<CardView>(R.id.button_kuis_akhir)
 
         play1.setOnClickListener {
             Intent(this@MateriIpaBab1Activity,VideoIpa1Activity::class.java).also {
@@ -38,6 +39,13 @@ class MateriIpaBab1Activity : AppCompatActivity() {
             Intent(this@MateriIpaBab1Activity,Ipa_Activity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 startActivity(it)}
+        }
+
+        kuis.setOnClickListener {
+            Intent(this@MateriIpaBab1Activity, KuisIpaActivity::class.java).also {
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+                startActivity(it)
+            }
         }
         rangkuman.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){

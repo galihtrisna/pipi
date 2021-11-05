@@ -41,11 +41,6 @@ class HomeActivity : AppCompatActivity() {
                 startActivity(intent) }
         }
 
-        btn_logout.setOnClickListener{
-            auth.signOut()
-            Intent(this@HomeActivity,LoginActivity::class.java).also { intent ->
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(intent) }}
         matematika.setOnClickListener {
             Intent(this@HomeActivity,MatematikaActivity::class.java).also { intent ->
                 startActivity(intent) }
