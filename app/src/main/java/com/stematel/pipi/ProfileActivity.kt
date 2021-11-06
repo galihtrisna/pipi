@@ -37,7 +37,11 @@ class ProfileActivity : AppCompatActivity() {
         val emailku = currentUser?.email
         email.text = "Email : ${emailku}"
         val hpku = currentUser?.phoneNumber
-        nohp.text = "No hp : ${hpku}"
+        if (hpku.isNullOrEmpty()){
+            nohp.text = "No hp : "
+        } else {
+            nohp.text = "No hp : ${hpku}"
+        }
         Glide.with(this).load(currentUser?.photoUrl).into(gambar)
 
         logout.setOnClickListener {
@@ -48,9 +52,10 @@ class ProfileActivity : AppCompatActivity() {
         }
         val back = findViewById<ImageButton>(R.id.back)
         back.setOnClickListener {
-            Intent(this@ProfileActivity,Ipa_Activity::class.java).also {
+            Intent(this@ProfileActivity,HomeActivity::class.java).also {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-                startActivity(it)}
+                startActivity(it) }
+            finish()
         }
     }
     private fun hideSystemUI() {
@@ -64,5 +69,11 @@ class ProfileActivity : AppCompatActivity() {
             // appear for some time
             controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
+    }
+    override fun onBackPressed() {
+        Intent(this@ProfileActivity,HomeActivity::class.java).also { intent ->
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            startActivity(intent) }
     }
 }
